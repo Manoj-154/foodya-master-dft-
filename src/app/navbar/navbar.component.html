@@ -1,0 +1,11 @@
+<div id="navbar">
+    <ul>
+        <li><a (click)="changeView()" routerLink="home">Home</a></li>
+        <li><a (click)="changeView()" routerLink="about">About</a></li>
+        <li><a (click)="changeView()" routerLink="orders">Orders</a></li>
+        <li><a (click)="changeView()" routerLink="contactus">Contact Us</a></li>
+        <li><button (click)="changeView()" routerLink="register">Signup</button></li>
+    </ul>
+</div>
+
+<img *ngIf="imgVisible" src="https://www.apptunix.com/blog/wp-content/uploads/sites/3/2020/04/online-food-delivery-industry.jpg" alt="">

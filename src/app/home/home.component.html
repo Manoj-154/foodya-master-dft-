@@ -1,0 +1,23 @@
+<h1>The popular categories are here</h1>
+<div class="categories">
+    <div *ngFor="let item of popItems">
+        <button (click)="onSelect(item)">
+            <img src="{{item.imgUrl}}" alt="">
+            <h2>{{item.names}}</h2>
+        </button>
+    </div>
+</div>
+
+<div class="filteredCategories">
+    <div *ngFor="let item of filteredItems">
+        <img src="{{item.itemImg}}" alt="">
+        <div id="foodContent">
+            <div *ngFor="let star of stars">
+                <img src="{{star.starImg}}" alt="">
+            </div>
+            <h2>{{item.itemName}}</h2>
+            <h3>{{item.rate}}</h3>
+        </div>
+        <button (click)="add(item)">Add to cart</button>
+    </div>
+</div>
